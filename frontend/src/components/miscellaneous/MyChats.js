@@ -21,7 +21,7 @@ const MyChats = ({ fetchAgain }) => {
       };
 
       const { data } = await axios.get(
-        "http://localhost:5000/api/chat",
+        "https://talkify-q51w.onrender.com/api/chat",
         config
       );
       setChats(data);

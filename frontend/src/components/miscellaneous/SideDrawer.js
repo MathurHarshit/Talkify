@@ -74,7 +74,7 @@ const SideDrawer = () => {
         },
       };
       const { data } = await axios.get(
-        `http://localhost:5000/api/user?search=${search}`,
+        `https://talkify-q51w.onrender.com/api/user?search=${search}`,
         config
       );
       setLoading(false);
@@ -103,7 +103,7 @@ const SideDrawer = () => {
       };
 
       const { data } = await axios.post(
-        "http://localhost:5000/api/chat",
+        "https://talkify-q51w.onrender.com/api/chat",
         { userId },
         config
       );

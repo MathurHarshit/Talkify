@@ -45,7 +45,7 @@ const GroupChatModal = ({ children }) => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:5000/api/user?search=${search}`,
+        `https://talkify-q51w.onrender.com/api/user?search=${search}`,
         config
       );
 
@@ -101,7 +101,7 @@ const GroupChatModal = ({ children }) => {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:5000/api/chat/group",
+        "https://talkify-q51w.onrender.com/api/chat/group",
 
         {
           name: groupChatName,

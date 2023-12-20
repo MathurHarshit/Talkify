@@ -115,7 +115,7 @@ const Signup = () => {
         },
       };
       const response = await axios.post(
-        "http://localhost:5000/api/user",
+        "https://talkify-q51w.onrender.com/api/user",
         { name, email, password, pic },
         config
       );
